@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест відображення зображень</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-image {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тест відображення зображень</h1>
+    
+    <h2>1. Зображення з абсолютного URL</h2>
+    <div class="test-image">
+        <img src="https://images.unsplash.com/photo-1532989029401-439615f3d4b4" alt="Тестове зображення 1">
+        <p>URL: https://images.unsplash.com/photo-1532989029401-439615f3d4b4</p>
+    </div>
+    
+    <h2>2. Зображення з відносного шляху</h2>
+    <div class="test-image">
+        <img src="/images/events/test.jpg" alt="Тестове зображення 2">
+        <p>URL: /images/events/test.jpg</p>
+    </div>
+    
+    <h2>3. Зображення з іншого відносного шляху</h2>
+    <div class="test-image">
+        <img src="images/events/test.jpg" alt="Тестове зображення 3">
+        <p>URL: images/events/test.jpg</p>
+    </div>
+</body>
+</html>
